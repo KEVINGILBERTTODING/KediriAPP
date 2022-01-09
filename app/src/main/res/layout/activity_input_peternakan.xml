@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="15dp">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nama Peternakan"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextJenis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Jenis"
+        android:layout_below="@+id/editTextName"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextAlamat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Alamat Peternakan"
+        android:layout_below="@+id/editTextJenis"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/editTextLatitude"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAlamat"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Latitude"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextLongitude"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLatitude"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Longitide"
+        android:inputType="textEmailAddress" />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/ButtonInsert"
+        android:layout_below="@+id/editTextLongitude"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

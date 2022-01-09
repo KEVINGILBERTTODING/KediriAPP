@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="0dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvId"
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvNama"
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:text="Nama Tempat"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvLat"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:text="Lat"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvLng"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:text="Long"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>
