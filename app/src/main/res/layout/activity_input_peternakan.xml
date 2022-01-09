@@ -61,8 +61,12 @@
 
 
     <Spinner
+        android:layout_centerHorizontal="true"
+        android:id="@+id/spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLongitude"
+
 
         />
 
@@ -71,7 +75,7 @@
         android:layout_height="wrap_content"
         android:text="Submit"
         android:id="@+id/ButtonInsert"
-        android:layout_below="@+id/editTextLongitude"
+        android:layout_below="@+id/spinner"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

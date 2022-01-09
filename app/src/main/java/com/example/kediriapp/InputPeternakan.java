@@ -18,12 +18,18 @@ import com.android.volley.toolbox.Volley;
 import java.util.HashMap;
 import java.util.Map;
 
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+
 
 public class InputPeternakan extends AppCompatActivity {
+
 
     EditText namaPeternakan, jenisPeternakan, alamatPeternakan, latitude, longitude;
     Button InsertButton;
     ProgressDialog progressDialog;
+    Spinner spinner;
 
 
     RequestQueue requestQueue;
@@ -37,11 +43,17 @@ public class InputPeternakan extends AppCompatActivity {
         setContentView(R.layout.activity_input_peternakan);
 
         namaPeternakan = findViewById(R.id.editTextName);
-        jenisPeternakan = findViewById(R.id.editTextJenis);
+
         alamatPeternakan = findViewById(R.id.editTextAlamat);
         latitude = findViewById(R.id.editTextLatitude);
         longitude = findViewById(R.id.editTextLongitude);
         InsertButton = findViewById(R.id.ButtonInsert);
+        spinner = findViewById(R.id.spinner);
+
+        ArrayAdapter<CharSequence>adapter = ArrayAdapter.createFromResource(this, R.array.jenis, android.R.layout.simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
 
         requestQueue = Volley.newRequestQueue(InputPeternakan.this);
 
@@ -109,7 +121,7 @@ public class InputPeternakan extends AppCompatActivity {
     // Creating method to get value from EditText.
     public void GetValueFromEditText() {
         NameHolder = namaPeternakan.getText().toString().trim();
-        JenisHolder = jenisPeternakan.getText().toString().trim();
+        JenisHolder = spinner.getSelectedItem().toString().trim();
         AlamatHolder = alamatPeternakan.getText().toString().trim();
         LatitudeHolder = latitude.getText().toString().trim();
         LongitudeHolder = longitude.getText().toString().trim();

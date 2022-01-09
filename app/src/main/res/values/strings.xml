@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">KediriAPP</string>
+
+
+    <string-array name="jenis">
+        <item>Sapi</item>
+        <item>Unggas</item>
+    </string-array>
 </resources>
