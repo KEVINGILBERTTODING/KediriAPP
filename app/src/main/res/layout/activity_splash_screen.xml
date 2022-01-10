@@ -21,13 +21,12 @@
         android:id="@+id/title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
         android:layout_toRightOf="@id/logoKediri"
         android:fontFamily="@font/sfbold"
         android:text="Kabupaten Kediri"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:layout_marginTop="310dp"
-        />
+        android:textColor="@color/thirdColor"
+        android:textSize="25sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,17 +41,40 @@
 
             />
 
-    <TextView
-        android:id="@+id/txtbottom"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="680dp"
-        android:layout_marginBottom="5dp"
-        android:fontFamily="@font/sfreg"
-        android:text="Mobile Gis Kab. Kediri"
-        android:textColor="@color/white"
-        android:textSize="10sp" />
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/txtbottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="143dp"
+            android:layout_marginTop="670dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/sfreg"
+            android:text="Mobile Gis"
+            android:textColor="@color/white"
+
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/txtbottom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="670dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/sfreg"
+            android:text=" Kab. Kediri"
+            android:textColor="@color/thirdColor"
+            android:textSize="11sp" />
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -60,7 +82,7 @@
         android:text="Version 1.1"
         android:textSize="9sp"
         android:textColor="@color/white"
-        android:layout_below="@+id/txtbottom"
+       android:layout_marginTop="690dp"
         android:layout_marginBottom="0dp"
         android:layout_centerHorizontal="true"
         />
