@@ -23,7 +23,7 @@ public class ShowMap extends AppCompatActivity {
     public void onWindowFocusChanged(boolean hasFocus) {
 
         super.onWindowFocusChanged(hasFocus);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE);
+
         viewWeb();
     }
 
