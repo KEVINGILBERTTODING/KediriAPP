@@ -46,14 +46,13 @@
         android:id="@+id/txtbottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WebGis Peternakan Kab. Kediri"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="680dp"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
+        android:layout_marginTop="680dp"
+        android:layout_marginBottom="5dp"
         android:fontFamily="@font/sfreg"
-        android:textSize="10sp"
-        />
+        android:text="Mobile Gis Kab. Kediri"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
 
     <TextView
         android:layout_width="wrap_content"
