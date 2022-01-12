@@ -13,6 +13,7 @@
         android:theme="@style/Theme.KediriAPP"
         android:usesCleartextTraffic="true">
         <activity
+            android:theme="@style/maintheme"
             android:name=".MainActivity"
             android:exported="true" />
         <activity

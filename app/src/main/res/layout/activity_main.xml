@@ -4,21 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+
+    android:background="@drawable/background"
 
     tools:context=".MainActivity">
 
-    <Button
+    <ImageButton
+        android:id="@+id/burgermenu"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_burger_menu" />
 
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/btn_search"
+
+        />
+
+    <ImageView
+
+        android:id="@+id/logokediri"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/burgermenu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/kediri_logo" />
+
+    <TextView
+        android:id="@+id/judul1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/burgermenu"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@+id/logokediri"
+        android:fontFamily="@font/sfbold"
+        android:text="Kabupaten Kediri"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/mainColor"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul1"
+        android:layout_toRightOf="@id/logokediri"
+        android:layout_marginLeft="10dp"
+        android:text="Peternakan Sapi dan Unggas"
+        android:textSize="10sp"
+        android:fontFamily="@font/sfbold"
+        android:textColor="@color/mainColor"
+        />
+
+    <TextView
+        android:id="@+id/tvDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Dashboard"
+        android:fontFamily="@font/sfbold"
+        android:layout_below="@id/logokediri"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:textSize="18sp"
+        />
+
+    <ImageButton
+        android:id="@+id/lihatpeta"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tvDashboard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/petav2" />
+
+    <ImageButton
+        android:id="@+id/lihatdata"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/lihatpeta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lihatdata" />
+
+    <ImageButton
+        android:id="@+id/inputdata"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:background="@drawable/inputdata"
+        android:layout_below="@+id/lihatdata"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+    <Button
+        android:visibility="gone"
         android:id="@+id/btnPeta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Lihat Peta"
         android:gravity="center"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="270dp"
         />
     <Button
-
+        android:visibility="gone"
         android:id="@+id/btnListPeternakan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,7 +126,7 @@
         android:layout_below="@id/btnPeta"
         />
     <Button
-
+        android:visibility="gone"
         android:id="@+id/btnInsertData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
