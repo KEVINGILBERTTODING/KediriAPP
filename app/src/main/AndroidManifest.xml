@@ -17,9 +17,11 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
+            android:theme="@style/maintheme"
             android:name=".InputPeternakan"
             android:exported="true" />
         <activity
+
             android:name=".ShowMap"
             android:exported="true" />
         <activity
