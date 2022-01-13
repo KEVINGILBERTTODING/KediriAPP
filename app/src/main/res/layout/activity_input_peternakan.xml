@@ -8,32 +8,82 @@
 >
 
 
+    <ImageButton
+        android:id="@+id/btnback"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnback" />
+
+    <TextView
+        android:id="@+id/tvinputdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnback"
+        android:layout_marginLeft="20dp"
+       android:layout_marginTop="10dp"
+        android:fontFamily="@font/sfbold"
+        android:text="InputData"
+        android:textColor="@color/mainColor"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvpeternakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peternakan Unggas dan Sapi"
+        android:textColor="@color/mainColor"
+        android:fontFamily="@font/sfbold"
+        android:layout_below="@+id/tvinputdata"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/lgogoinput"
+        android:layout_toRightOf="@+id/tvpeternakan"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        />
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="250dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         >
+
 
     <TextView
         android:id="@+id/judulnama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nama Peternakan"
-        android:layout_marginTop="20dp"
+
         />
 
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/judulnama"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:hint="Nama Peternakan"
-        android:inputType="text" />
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/judulnama"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            android:fontFamily="@font/sfreg"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:hint="Nama Peternakan"
+            android:background="@drawable/content3"
+            android:inputType="text" />
 
 
     <TextView
@@ -45,14 +95,17 @@
         android:layout_below="@id/editTextName"
         />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/juduljenis"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true" />
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/juduljenis"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/content3"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
 
     <TextView
         android:id="@+id/alamatpeternakan"
@@ -62,15 +115,23 @@
         android:layout_marginTop="10dp"
         android:text="Alamat Peternakan" />
 
-    <EditText
-        android:id="@+id/editTextAlamat"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/alamatpeternakan"
-        android:ems="10"
-        android:hint="Alamat Peternakan"
-        android:layout_marginTop="10dp"
-        android:inputType="text" />
+        <EditText
+            android:id="@+id/editTextAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/alamatpeternakan"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/content3"
+            android:ems="10"
+            android:hint="Alamat Peternakan"
+            android:fontFamily="@font/sfreg"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:maxLines="1"
+            android:inputType="text" />
 
     <TextView
         android:id="@+id/tvLatitude"
@@ -81,16 +142,22 @@
         android:text="Latitude" />
 
 
-
-    <EditText
-        android:id="@+id/editTextLatitude"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvLatitude"
-        android:ems="10"
-        android:layout_marginTop="10dp"
-        android:hint="Latitude"
-        android:inputType="text" />
+        <EditText
+            android:id="@+id/editTextLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvLatitude"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Latitude"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sfreg"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/content3"
+            android:inputType="text" />
 
     <TextView
         android:id="@+id/tvLongitude"
@@ -101,22 +168,31 @@
         android:text="Longitude" />
 
 
-    <EditText
-        android:id="@+id/editTextLongitude"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvLongitude"
-        android:ems="10"
-        android:hint="Longitide"
-        android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/editTextLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvLongitude"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:hint="Longitude"
+            android:fontFamily="@font/sfreg"
+            android:background="@drawable/content3"
+            android:textSize="15sp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:inputType="textEmailAddress" />
 
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
         android:id="@+id/ButtonInsert"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/editTextLongitude"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentRight="true" />
     </RelativeLayout>
 </RelativeLayout>

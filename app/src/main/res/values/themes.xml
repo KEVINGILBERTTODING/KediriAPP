@@ -16,7 +16,7 @@
 
     <style name="maintheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/thirdColor</item>
+        <item name="colorPrimary">@color/mainColor</item>
         <item name="colorPrimaryVariant">@color/thirdColor</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->

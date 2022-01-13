@@ -2,10 +2,12 @@ package com.example.kediriapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -27,6 +29,7 @@ public class InputPeternakan extends AppCompatActivity {
 
 
     EditText namaPeternakan, jenisPeternakan, alamatPeternakan, latitude, longitude;
+    ImageButton btnBack;
     Button InsertButton;
     ProgressDialog progressDialog;
     Spinner spinner;
@@ -43,12 +46,21 @@ public class InputPeternakan extends AppCompatActivity {
         setContentView(R.layout.activity_input_peternakan);
 
         namaPeternakan = findViewById(R.id.editTextName);
-
+        btnBack =  findViewById(R.id.btnback);
         alamatPeternakan = findViewById(R.id.editTextAlamat);
         latitude = findViewById(R.id.editTextLatitude);
         longitude = findViewById(R.id.editTextLongitude);
         InsertButton = findViewById(R.id.ButtonInsert);
         spinner = findViewById(R.id.spinner);
+
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(InputPeternakan.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         ArrayAdapter<CharSequence>adapter = ArrayAdapter.createFromResource(this, R.array.jenis, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

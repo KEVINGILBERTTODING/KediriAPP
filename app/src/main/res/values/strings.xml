@@ -3,6 +3,7 @@
 
 
     <string-array name="jenis">
+        <item>Pilih Kategori</item>
         <item>Sapi</item>
         <item>Unggas</item>
     </string-array>
