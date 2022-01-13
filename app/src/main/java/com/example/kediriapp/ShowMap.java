@@ -31,6 +31,6 @@ public class ShowMap extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
         webView.setWebChromeClient(new WebChromeClient());
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http:/192.168.0.102/kediri-map-uas/map/map.php");
+        webView.loadUrl("http:/192.168.0.101/kediri-map-uas/map/map.php");
     }
 }

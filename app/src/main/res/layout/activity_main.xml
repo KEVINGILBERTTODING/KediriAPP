@@ -66,14 +66,13 @@
         android:id="@+id/tvDashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:text="Dashboard"
-        android:fontFamily="@font/sfbold"
         android:layout_below="@id/logokediri"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="80dp"
-        android:textSize="18sp"
-        />
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/sfbold"
+        android:text="Dashboard"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
     <ImageButton
         android:id="@+id/lihatpeta"
@@ -81,7 +80,7 @@
         android:layout_height="120dp"
         android:layout_below="@+id/tvDashboard"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/petav2" />
 
     <ImageButton
@@ -90,7 +89,7 @@
         android:layout_height="120dp"
         android:layout_below="@+id/lihatpeta"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/lihatdata" />
 
     <ImageButton
@@ -100,7 +99,7 @@
         android:layout_height="120dp"
         android:background="@drawable/inputdata"
         android:layout_below="@+id/lihatdata"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         />
 
 

@@ -8,9 +8,12 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    ImageButton btnmap, btnshow, btninput;
 
 
     private int currentApiVersion;
@@ -18,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     @SuppressLint("NewApi")
     protected void onCreate(Bundle savedInstanceState)
+
+
     {
         super.onCreate(savedInstanceState);
 
@@ -75,4 +80,34 @@ public class MainActivity extends AppCompatActivity {
                             | View.SYSTEM_UI_FLAG_FULLSCREEN
                             | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         }
+
+
+        btnmap = (ImageButton) findViewById(R.id.lihatpeta);
+        btnshow = (ImageButton) findViewById(R.id.lihatdata);
+        btninput= (ImageButton) findViewById(R.id.inputdata);
+
+
+        btnmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ShowMap.class );
+                startActivity(intent);
+            }
+        });
+
+        btnshow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ListPeternakan.class);
+                startActivity(intent);
+            }
+        });
+
+        btninput.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, InputPeternakan.class);
+                startActivity(intent);
+            }
+        });
     }}
