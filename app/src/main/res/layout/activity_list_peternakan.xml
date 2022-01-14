@@ -74,7 +74,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="240dp"
         android:layout_below="@id/tvlistData"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"

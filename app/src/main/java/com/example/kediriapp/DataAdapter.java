@@ -36,7 +36,8 @@ public class DataAdapter extends BaseAdapter {
                 Data d = new Data(obj.getJSONObject("properties").getString("id"),
                         obj.getJSONObject("properties").getString("nama"),
                         obj.getJSONObject("properties").getString("lat"),
-                        obj.getJSONObject("properties").getString("lng")
+                        obj.getJSONObject("properties").getString("lng"),
+                        obj.getJSONObject("properties").getString("jenis")
 
 
                 );
@@ -74,11 +75,13 @@ public class DataAdapter extends BaseAdapter {
         TextView tvNama = view.findViewById(R.id.tvNama);
         TextView tvLat = view.findViewById(R.id.tvLat);
         TextView tvlng = view.findViewById(R.id.tvLng);
+        TextView tvJenis = view.findViewById(R.id.tvJenis);
         Data d = daftar.get(i);
         tvId.setText(d.id);
         tvNama.setText(d.nama);
         tvLat.setText(d.lat);
         tvlng.setText(d.lng);
+        tvJenis.setText(d.jenis);
 
         return view;
     }
