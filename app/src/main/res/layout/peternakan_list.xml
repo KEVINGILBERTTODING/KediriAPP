@@ -6,7 +6,20 @@
     >
 
 
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <TableLayout
+
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
@@ -20,7 +33,10 @@
 
         <TableRow
             android:layout_width="match_parent"
+            android:scrollbars="horizontal"
             android:layout_height="match_parent">
+
+
 
             <TextView
                 android:id="@+id/tvId"
@@ -44,13 +60,25 @@
                 android:textSize="16sp" />
 
             <TextView
+
                 android:id="@+id/tvLng"
                 android:layout_width="101dp"
                 android:layout_height="wrap_content"
                 android:text="Long"
                 android:textSize="16sp" />
 
+            <TextView
+
+                android:id="@+id/tvJenis"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:text="Jenis"
+                android:textSize="16sp" />
+
         </TableRow>
 
     </TableLayout>
+    </LinearLayout>
+    </HorizontalScrollView>
+
 </RelativeLayout>
