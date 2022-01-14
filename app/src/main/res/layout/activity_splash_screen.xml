@@ -13,17 +13,18 @@
         android:id="@+id/logoKediri"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="280dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="12dp"
         android:src="@drawable/logokediri" />
 
     <TextView
         android:id="@+id/title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="310dp"
+        android:layout_marginTop="290dp"
         android:layout_toRightOf="@id/logoKediri"
         android:fontFamily="@font/sfbold"
+        android:layout_marginLeft="-10dp"
         android:text="Kabupaten Kediri"
         android:textColor="@color/thirdColor"
         android:textSize="25sp" />
@@ -34,6 +35,7 @@
             android:fontFamily="@font/sfreg"
             android:text="Peternakan Sapi dan Unggas"
             android:textSize="11sp"
+            android:layout_marginLeft="-10dp"
             android:textColor="@color/white"
             android:layout_below="@+id/title1"
             android:layout_toRightOf="@id/logoKediri"
@@ -56,11 +58,11 @@
             android:layout_marginLeft="143dp"
             android:layout_marginTop="670dp"
             android:layout_marginBottom="5dp"
-            android:fontFamily="@font/sfreg"
+            android:fontFamily="@font/sfbold"
             android:text="Mobile Gis"
             android:textColor="@color/white"
 
-            android:textSize="11sp" />
+            android:textSize="10sp" />
 
         <TextView
             android:id="@+id/txtbottom2"
@@ -69,10 +71,10 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="670dp"
             android:layout_marginBottom="5dp"
-            android:fontFamily="@font/sfreg"
+            android:fontFamily="@font/sfbold"
             android:text=" Kab. Kediri"
             android:textColor="@color/thirdColor"
-            android:textSize="11sp" />
+            android:textSize="10sp" />
 
     </LinearLayout>
 
@@ -81,6 +83,7 @@
         android:layout_height="wrap_content"
         android:text="Version 1.1"
         android:textSize="9sp"
+        android:fontFamily="@font/sfreg"
         android:textColor="@color/white"
        android:layout_marginTop="690dp"
         android:layout_marginBottom="0dp"
