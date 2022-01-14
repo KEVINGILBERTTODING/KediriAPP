@@ -25,6 +25,7 @@
             android:name=".ShowMap"
             android:exported="true" />
         <activity
+            android:theme="@style/maintheme"
             android:name=".ListPeternakan"
             android:exported="true" />
         <activity

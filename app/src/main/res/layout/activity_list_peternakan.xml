@@ -4,7 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListPeternakan">
+    tools:context=".ListPeternakan"
+    android:background="@drawable/bg_showdata"
+    >
+
+
+
+    <ImageButton
+        android:id="@+id/btnback2"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnback" />
+
+    <TextView
+        android:id="@+id/tvinputdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnback2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sfbold"
+        android:text="Daftar Data"
+        android:textColor="@color/mainColor"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvpeternakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peternakan Unggas dan Sapi"
+        android:textColor="@color/mainColor"
+        android:fontFamily="@font/sfbold"
+        android:layout_below="@+id/tvinputdata"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/logoshowdata"
+        android:layout_toRightOf="@+id/tvpeternakan"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tvlistData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Data"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sfbold"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tvpeternakan"
+        android:layout_marginTop="100dp"
+        />
 
     <ListView
         android:id="@+id/listview"
@@ -14,9 +72,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginLeft="-2dp"
-        android:layout_marginTop="-3dp"
+        android:layout_marginTop="260dp"
+        android:layout_below="@id/tvlistData"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginBottom="3dp" />
 
 </RelativeLayout>

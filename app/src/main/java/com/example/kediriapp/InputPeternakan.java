@@ -38,7 +38,7 @@ public class InputPeternakan extends AppCompatActivity {
     RequestQueue requestQueue;
     String NameHolder, JenisHolder, AlamatHolder, LatitudeHolder, LongitudeHolder;// String Variables To Hold EditText Values.
 
-    String HttpUrl = "http://192.168.0.101/kediri-uas/peternakan.php";
+    String HttpUrl = "http://192.168.0.103/kediri-uas/peternakan.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
