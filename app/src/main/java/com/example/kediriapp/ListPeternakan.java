@@ -26,7 +26,7 @@ public class ListPeternakan extends AppCompatActivity {
 
     ListView listview;
     DataAdapter adapter;
-    String url="http://192.168.0.103/geoserver/kediri/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=kediri%3Apeternakan1&maxFeatures=50&outputFormat=application%2Fjson";
+    String url="http://192.168.11.19/geoserver/kediri/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=kediri%3Apeternakan1&maxFeatures=50&outputFormat=application%2Fjson";
 
     private int currentApiVersion;
 

@@ -21,7 +21,7 @@ public class ShowMap extends AppCompatActivity {
     }
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         super.onWindowFocusChanged(hasFocus);
 
         viewWeb();
@@ -31,6 +31,6 @@ public class ShowMap extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
         webView.setWebChromeClient(new WebChromeClient());
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http:/192.168.0.103/kediri-map-uas/map/map.php");
+        webView.loadUrl("http:/192.168.11.19/kediri-map-uas/map/map1.php");
     }
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ListPeternakan"
-    android:background="@drawable/bg_showdata"
+    android:background="@drawable/lihatdatabg"
     >
 
 
@@ -55,14 +55,13 @@
         android:id="@+id/tvlistData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="List Data"
-        android:textColor="@color/black"
-        android:fontFamily="@font/sfbold"
-        android:textSize="20sp"
-        android:layout_marginLeft="20dp"
         android:layout_below="@+id/tvpeternakan"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="100dp"
-        />
+        android:fontFamily="@font/sfbold"
+        android:text="List Data"
+        android:textColor="@color/mainColor"
+        android:textSize="20sp" />
 
 
     <ListView
